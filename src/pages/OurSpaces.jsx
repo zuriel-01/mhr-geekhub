@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import albatross from '../assets/ALBATROSS.jpg';
 import eagle from '../assets/eagle.jpg';
 import falcon from '../assets/falcon.jpg';
-import robin from '../assets/robin.jpg';
+import robin from '../assets/ROBIN.jpg';
 function useScrollAnimations() {
   useEffect(() => {
     const targets = document.querySelectorAll('.room-card, .section-tag, .section-h2, .spaces-header');

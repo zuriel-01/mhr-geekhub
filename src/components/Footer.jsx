@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
             <div className="footer-socials">
               <a href="https://www.instagram.com/vip_mhresidence/" target="_blank" className="social-btn"> <SiInstagram /></a>
-              <a href="https://api.whatsapp.com/send/?phone=%2B2348146114050&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnQMiUxlOEjVMEyaOCLQ2nDaR-sZ3-064BKLq93tuVDF9NIIlTi6eUXDb105k_aem_dvRJUrNSSymtvfA3kllJ4w" target="_blank" className="social-btn" target="_blank" rel="noreferrer"> <IoLogoWhatsapp /></a>
+              <a href="https://api.whatsapp.com/send/?phone=%2B2348146114050&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnQMiUxlOEjVMEyaOCLQ2nDaR-sZ3-064BKLq93tuVDF9NIIlTi6eUXDb105k_aem_dvRJUrNSSymtvfA3kllJ4w" className="social-btn" target="_blank" rel="noreferrer"> <IoLogoWhatsapp /></a>
               <a href="https://www.threads.com/@vip_mhresidence?xmt=AQG0EIU13pGNVB3xrcvGlW4awAiV7oVS_77sIYbIsqiyFCk" target="_blank" className="social-btn"><SiThreads /></a>
             </div>
           </div>
