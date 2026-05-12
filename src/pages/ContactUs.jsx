@@ -230,11 +230,11 @@ export default function ContactUs() {
                 <div className="form-group">
                   <label htmlFor="room">Room Preference</label>
                   <select id="room" name="room" value={formData.room} onChange={handleChange}>
-                    <option value="">Select a suite</option>
-                    <option>The Robin Suite</option>
-                    <option>The Falcon Suite</option>
-                    <option>The Albatross Suite</option>
-                    <option>The Eagle Suite</option>
+                    <option value="">Select a Room </option>
+                    <option>The Robin Room</option>
+                    <option>The Falcon Room</option>
+                    <option>The Albatross Room</option>
+                    <option>The Eagle Room</option>
                   </select>
                 </div>
                 <div className="form-group">

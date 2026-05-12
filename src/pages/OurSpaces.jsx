@@ -4,6 +4,7 @@ import albatross from '../assets/ALBATROSS.jpg';
 import eagle from '../assets/eagle.jpg';
 import falcon from '../assets/falcon.jpg';
 import robin from '../assets/ROBIN.jpg';
+import chair from '../assets/chair.jpg';
 function useScrollAnimations() {
   useEffect(() => {
     const targets = document.querySelectorAll('.room-card, .section-tag, .section-h2, .spaces-header');
@@ -30,46 +31,46 @@ const rooms = [
    {
     badge: 'MOST POPULAR',
     tagline: 'Comfort Refined',
-    name: 'The Robin Suite',
+    name: 'The Robin Room',
     desc: 'The ideal base for the discerning traveller. Plush bedding, curated interiors, and everything you need — nothing you don\'t.',
-    features: ['King Bed', 'En-Suite Bath', 'Smart TV', 'High-Speed WiFi', 'Air Conditioning', 'Daily Breakfast'],
+    features: ['Complimentary Amenities', 'Modern Conveniences', 'Ambience and Privacy'],
     price: 'From ₦85,100',
     /* Replace with your local image path e.g. /images/classic-suite.jpg */
     img: robin,
-    alt: 'Robin Suite',
+    alt: 'Robin Room',
   },
   {
-    badge: 'PREMIUM PICK',
-    tagline: 'The Apex of Luxury',
-    name: 'The Falcon Suite',
+    badge: 'GUEST PICK',
+    tagline: 'Comfort Refined',
+    name: 'The Falcon Room',
     desc: "The apex of the Morgan Hill experience. Elevated views, generous space, and an atmosphere that simply can't be replicated.",
-    features: ['Master Bedroom', 'Living Area', 'Full Kitchen', 'Premium Bath', 'Panoramic Views', 'Concierge'],
+    features: ['Ultimate Comfort', 'Dining Privileges', 'Personalized Service', 'Smart TV & Streaming', '24/7 High-Speed Wi-Fi', 'Airport Pick-Up'],
     price: 'From ₦125,200',
     /* Replace with your local image path e.g. /images/penthouse.jpg */
     img: falcon,
-    alt: 'Falcon Suite',
+    alt: 'Falcon Room',
   },
-  {
-    badge: 'MOST POPULAR',
-    tagline: 'Comfort Refined',
-    name: 'The Albatross Suite',
-    desc: 'The ideal base for the discerning traveller. Plush bedding, curated interiors, and everything you need — nothing you don\'t.',
-    features: ['King Bed', 'En-Suite Bath', 'Smart TV', 'High-Speed WiFi', 'Air Conditioning', 'Daily Breakfast'],
-    price: 'From ₦175,500',
-    /* Replace with your local image path e.g. /images/classic-suite.jpg */
-    img: albatross,
-    alt: 'Albatross Suite',
-  },
-  {
+    {
     badge: 'BUSINESS FAVOURITE',
     tagline: 'Work. Rest. Excel.',
-    name: 'The Eagle Suite',
+    name: 'The Eagle Room',
     desc: 'For the professional who refuses to compromise. A dedicated workspace meets premium comfort built for productivity and rest.',
-    features: ['King Bed', 'Workspace Desk', 'En-Suite Bath', 'Smart TV', 'High-Speed WiFi', 'Kitchenette'],
+    features: ['Ultimate Comfort', 'Modern Lounge Area', 'Complimentary Mini Bar & Refreshments', 'Welcome Basket & Fruit Plate', 'Dining Privileges', 'Personalized Service', 'Smart TV & Streaming', '24/7 High-Speed Wi-Fi', 'Airport Pick-Up'],
     price: 'From ₦150,750',
     /* Replace with your local image path e.g. /images/executive-suite.jpg */
     img: eagle,
-    alt: 'Eagle Suite',
+    alt: 'Eagle Room',
+  },
+  {
+    badge: 'LUXURY CHOICE',
+    tagline: 'The Apex of Luxury',
+    name: 'The Albatross Room',
+    desc: 'The ideal base for the discerning traveller. Plush bedding, curated interiors, and everything you need — nothing you don\'t.',
+    features: ['Ultimate Comfort', 'Modern Lounge Area', 'Complimentary Mini Bar & Refreshments', 'Welcome Basket & Fruit Plate', 'Dining Privileges', 'Personalized Service', 'Smart TV & Streaming', '24/7 High-Speed Wi-Fi', 'Airport Pick-Up'],
+    price: 'From ₦175,500',
+    /* Replace with your local image path e.g. /images/classic-suite.jpg */
+    img: albatross,
+    alt: 'Albatross Room',
   },
   
 ];
@@ -92,7 +93,7 @@ export default function OurSpaces() {
         <div
           style={{
             position: 'absolute', inset: 0,
-            background: "url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1800&q=80') center/cover no-repeat",
+            background: `url(${chair}) center/cover no-repeat`,
             opacity: 0.2,
           }}
         />

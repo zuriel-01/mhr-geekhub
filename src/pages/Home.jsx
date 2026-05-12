@@ -164,7 +164,7 @@ function About() {
                 <div className="lbl">AVERAGE RATING</div>
               </div>
               <div className="about-stat">
-                <div className="val">3</div>
+                <div className="val">4</div>
                 <div className="lbl">ROOM CATEGORIES</div>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <TrustBar />
+      {/* <TrustBar /> */}
       <About />
       <WhyMHR />
       <Reviews />

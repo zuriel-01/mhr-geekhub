@@ -3,6 +3,11 @@ import { SiInstagram } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { SiThreads } from "react-icons/si";
+import { FiPhone } from "react-icons/fi";
+import { BsGlobe2 } from "react-icons/bs";
+import { LuMail } from "react-icons/lu";
+import { MdLocationPin } from "react-icons/md";
+
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -51,19 +56,20 @@ export default function Footer() {
           {/* Suites */}
           <div className="footer-col">
             <h4>Our Suites</h4>
-            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Classic Suite</button>
-            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Executive Suite</button>
-            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Penthouse Retreat</button>
-            <button onClick={() => handleNav('/packages')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>View Packages</button>
+            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Robin Room</button>
+            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Falcon Room</button>
+            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Eagle Room</button>
+            <button onClick={() => handleNav('/spaces')} style={{ background:'none', border:'none', cursor:'pointer', display:'block', color:'rgba(255,255,255,0.45)', fontSize:'0.82rem', fontFamily:'Inter,sans-serif', marginBottom:'10px', textAlign:'left', transition:'color 0.2s' }} onMouseEnter={e=>e.target.style.color='var(--gold)'} onMouseLeave={e=>e.target.style.color='rgba(255,255,255,0.45)'}>The Albatross Room</button>
+           
           </div>
 
           {/* Contact */}
           <div className="footer-col">
             <h4>Contact Us</h4>
-            <p>📞 08160892247</p>
-            <p style={{ marginTop: '8px' }}>📧 hello@morganhillresidence.com</p>
-            <p style={{ marginTop: '8px' }}>📍 Abuja, Nigeria</p>
-            <p style={{ marginTop: '8px' }}>🌐 morganhillresidence.com</p>
+            <p><FiPhone style={{ color: '#c9a84c'}}/> +234 814 611 4050</p>
+            <p style={{ marginTop: '8px'}}><LuMail style={{ color: '#c9a84c'}} /> info@morganhillresidence.com</p>
+            <p style={{ marginTop: '8px' }}><MdLocationPin style={{ color: '#c9a84c'}}/> Abuja, Nigeria</p>
+            <p style={{ marginTop: '8px' }}><BsGlobe2 style={{ color: '#c9a84c'}} /> morganhillresidence.com</p>
           </div>
 
         </div>
