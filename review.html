@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Hill Residence - Guest Reviews Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f0;
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+        }
+
+        .carousel-container {
+            /* width: 100%; */
+            overflow: hidden;
+            padding: 20px 0;
+            position: relative;
+
+            display: flex;
+            align-items: center; /* Centers icon and text vertically */
+            width: 100%;         /* Ensures it doesn't push wide */
+            max-width: 100%;     /* Prevents horizontal overflow */
+            box-sizing: border-box; 
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 30px;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        /* Pause on hover */
+        .carousel-container:hover .carousel-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .review-card {
+            background-color: #fdfbf7;
+            border: 1px solid #c9a84c;
+            border-radius: 20px;
+            padding: 30px 35px;
+            width: 350px;
+            min-width: 320px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            flex-shrink: 0;
+        }
+
+        .quote-circle {
+            background-color: #c9a84c;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -55px auto 10px auto;
+            font-size: 24px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+        }
+
+        .header-title {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .divider-heart {
+            color: #c7a461;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2c2c2c;
+            padding: 0 5px;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .review-text-inner {
+            width: 100%;
+        }
+
+        .quote-mark {
+            color: #c7a461;
+            font-size: 30px;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 0;
+            vertical-align: middle;
+            position: relative;
+            top: 6px;
+        }
+
+        .quote-mark.left { margin-right: 3px; }
+        .quote-mark.right { margin-left: 3px; }
+
+        .footer-section {
+            margin-top: 15px;
+        }
+
+        .footer-line {
+            width: 60%;
+            height: 1px;
+            background-color: #d6c69e;
+            margin: 0 auto 5px auto;
+        }
+
+        .divider-heart-bottom {
+            color: #c7a461;
+            font-size: 8px;
+            margin-bottom: 5px;
+        }
+
+        .footer-attribution {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+        }
+
+        .footer-date {
+            font-size: 11px;
+            color: #666;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .review-card {
+                width: 280px;
+                min-width: 260px;
+                padding: 25px 20px;
+            }
+            .review-text {
+                font-size: 15px;
+                min-height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Reviews will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // ==============================================
+        //  EDIT YOUR REVIEWS HERE
+        //  Each review is an object with text and date
+        //  Use \n for line breaks
+        // ==============================================
+        const reviews = [
+            {
+                text: "Enjoyed my stay with \n Morgan Hill Residence.\n Luxurious, great value for money,\n wonderful customer \n service. Tasty meals.\n Definitely recommend.",
+                date: "MAY 2024"
+            },
+            {
+                text: "My stay was absolutely fantastic. From the moment I arrived, the staff's friendliness and professionalism stood out. They went above and beyond to ensure comfort. The place was incredibly neat and \n well-maintained, and the food was delicious with prompt.",
+                date: "JUNE 2024"
+            },
+            {
+                text: "They provided a really exceptional and first-class service. Thanks Glory & Ibrahim. Your customer service is top notch. I will highly recommend\n Morgan Hill Residence \n particularly for international visitors.",
+                date: "MAY 2024"
+            },
+            {
+                text: "Morgan Hill Residence is, without \n a doubt, one of the best places I have ever stayed.\n If you are looking for a place that combines comfort, cleanliness,\n warmth, and world-class hospitality,\n this is it. I would recommend it a \n thousand times over.",
+                date: "AUGUST 2024"
+            },
+            {
+                text: "My stay was outstanding. The reception team\n made me feel completely at home. \n The residence is spotless, \n and everything works perfectly. \n The hospitality was unlike anything I've experienced. Their attention to detail made me feel genuinely cared for.",
+                date: "AUGUST 2025"
+            },
+            {
+                text: "The standard of service is so high, \n I am worried if they can sustain it \n for the amount they charge. \n The facilities, food, staff courtesy, \n cleanliness, and functionality \n are all top notch. \n I recommend this place anytime. \n I would stay there again and again.",
+                date: "AUGUST 2025"
+            },
+            {
+                text: "Staying here was a lovely experience. \n From arrival, everything felt calm, \n clean, and welcoming. \n Netflix and welcome treats \n were a nice surprise. Breakfast was fresh and tasty, \n and the staff were warm and helpful. \n The whole place felt safe.",
+                date: "AUGUST 2025"
+            },
+            {
+                text: "I felt seen and cared for. \n Love leads here. \n High standards of care. \n Quality sheets and good lighting. \n No one gets hungry here.",
+                date: "OCTOBER 2025"
+            },
+            {
+                text: "Lovely place to be. \n Great service! \n Very attentive staff.",
+                date: "JULY 2025"
+            }
+        ];
+
+        // ==============================================
+        //  CAROUSEL BUILDER
+        // ==============================================
+        function createReviewCard(review) {
+            return `
+                <div class="review-card">
+                    <div class="quote-circle">“</div>
+                    <h2 class="header-title">GUEST REVIEW</h2>
+                    <div class="divider-heart">♥</div>
+                    <div class="review-text">
+                        <span class="quote-mark left">“</span>
+                        <span class="review-text-inner">${review.text.replace(/\n/g, '<br>')}</span>
+                        <span class="quote-mark right">”</span>
+                    </div>
+                    <div class="footer-section">
+                        <div class="footer-line"></div>
+                        <div class="divider-heart-bottom">♥</div>
+                        <div class="footer-attribution">– OUR VALUED GUEST</div>
+                        <div class="footer-date">${review.date}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        const track = document.getElementById('carouselTrack');
+        let allCardsHTML = '';
+
+        // Build the track with original reviews
+        reviews.forEach(review => {
+            allCardsHTML += createReviewCard(review);
+        });
+
+        // Duplicate the reviews for seamless looping
+        reviews.forEach(review => {
+            allCardsHTML += createReviewCard(review);
+        });
+
+        track.innerHTML = allCardsHTML;
+
+        // Adjust animation speed based on number of reviews
+        const totalCards = reviews.length * 2;
+        const duration = Math.max(20, totalCards * 3); // 3 seconds per card minimum
+        track.style.animationDuration = duration + 's';
+    </script>
+</body>
+</html>
